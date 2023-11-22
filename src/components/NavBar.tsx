@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 const NavBar: React.FC = () => {
 
     const [stickyNavbar, setStickyNavbar] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
