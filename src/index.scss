@@ -1,0 +1,369 @@
+@import './assets/bootstrap-grid.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 0 90px;
+    height: 72px;
+    
+    position: absolute;
+    z-index: 100;
+    color: white !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header.headerscroll {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    color: black !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    line-height: 35px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-flex;
+    padding: 15px 15px 15px 0px;
+}
+
+section {
+    min-height: 500px;
+    padding-top: 40px;
+}
+
+section.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34 197 94 / 1);
+    width: 100%;
+    height: 100vh;
+}
+
+section.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 30;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+section.hero .content_hero {
+    position: absolute;
+    top: 30vh;
+    margin: auto;
+    z-index: 40;
+    color: white;
+    width: 80%;
+    text-align: center;
+
+}
+
+section.hero .content_hero .group_input {
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+section.hero .content_hero .group_input .item_input {
+    width: 25%;
+}
+
+section.hero .content_hero .group_input input,
+section.hero .content_hero .group_input button,
+section.hero .content_hero .group_input select {
+    width: 90%;
+    padding: 10px;
+    height: 40px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+section.hero .content_hero .group_input button{
+    background-color: #FF4A52;
+    border: #FF4A52;
+    border-radius: 5px;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-title {
+    padding-bottom: 10px;
+    font-size: 48px;
+}
+
+.text-desc {
+    opacity: 0.5;
+}
+
+section.destinations {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+section.destinations .img_tour {
+    height: 350px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+}
+
+section.destinations .img_tour:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    border-radius: 10px;
+}
+
+section.destinations img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+section.destinations .cover_img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    border-radius: 10px;
+
+}
+
+section.destinations .title_tour {
+    position: absolute;
+    color: white;
+    bottom: 30px;
+    left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 4;
+}
+
+section.besttrips {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+section.besttrips img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+section.besttrips .more_information {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+
+section.besttrips .card {
+    border: 1px solid #dce0e0;
+    border-radius: 5px;
+    text-align: start;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+section.besttrips .card:hover {
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    cursor: pointer;
+    transform: translateY(-10px);
+
+}
+
+section.besttrips .price {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    color: white;
+    background-color: #FF4A52;
+    padding: 5px 15px;
+    font-weight: bold;
+    transition: transform 0.3s;
+
+}
+
+section.besttrips .card:hover .price {
+    transform: scale(1.1);
+}
+
+
+section.besttrips .sale {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: white;
+    background-color: #1EC6B6;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 17px 0px 10px 11px;
+}
+
+section.service {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+section.service img {
+    width: 40%;
+}
+
+.banner {
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+section.articlestips {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+section.articlestips img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+section.articlestips .card {
+    border: 1px solid #dce0e0;
+    border-radius: 5px;
+    text-align: start;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+section.articlestips .card:hover {
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    cursor: pointer;
+    transform: translateY(-10px);
+
+}
+
+section.articlestips .readmore{
+    color: grey;
+}
+
+section.articlestips .readmore:hover{
+    color: black;
+}
+
+footer {
+    background-color: black;
+    min-height: 300px;
+}
+.footer1 {
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+.footer1 .social_wrapper {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #fff!important;
+    background: #000;
+    border-radius: 250px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.footer1 .social_wrapper.facebook {
+    background-color: #2D5F9A !important;
+}
+.footer1 .social_wrapper.twitter {
+    background-color: #00C3F3 !important;
+}
+.footer1 .social_wrapper.youtube {
+    background-color: #cc181e !important;
+}
+.footer1 .social_wrapper.pinterest {
+    background-color: #bd081c !important;
+}
+.footer1 .social_wrapper.instagram {
+    background-color: #405de6 !important;
+}
+
+.footer1 img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer2 {
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    border-top: 1px solid rgb(139, 139, 139);
+    padding: 20px 30px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
